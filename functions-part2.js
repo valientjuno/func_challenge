@@ -47,7 +47,7 @@ console.log(scopingData()); // Expected: "Hello World"
 // Goal: Create a function that reverses a given string.
 // Error: Incorrect reversed string.
 function reverseString(str) {
-  reverseString((str = "Hello"));
+  return str.split("").reverse().join("");
   // Your code here (Hint: Use split, reverse, and join methods)
   // Example: return str.split("").reverse().join("");
 }
@@ -58,6 +58,7 @@ console.log(reverseString("Hello")); // Expected: "olleH"
 // Goal: Create a function that returns a random number between 1 and 10 (inclusive).
 // Error: Random number outside the 1-10 range or not a number.
 function randomNumber() {
+  return Math.floor(Math.random() * 10) + 1;
   // Your code here (Hint: Use Math.random() and Math.floor())
   // Example: return Math.floor(Math.random() * 10) + 1;
 }

@@ -47,7 +47,7 @@ console.log(scopingData()); // Expected: "Hello World"
 // Goal: Create a function that reverses a given string.
 // Error: Incorrect reversed string.
 function reverseString(str) {
-  return (str = "Hello");
+  reverseString((str = "Hello"));
   // Your code here (Hint: Use split, reverse, and join methods)
   // Example: return str.split("").reverse().join("");
 }

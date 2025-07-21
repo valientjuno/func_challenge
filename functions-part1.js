@@ -7,15 +7,17 @@ let fox = "Jumped Over The Lazy Dog";
 function jumpOverFence(fox) {
   // Your code here (Hint: Use string interpolation to append "Over The Fence")
   // Example: return `${fox} Over The Fence`;
+  return `The Lazy Brown Fox ${fox}`;
 }
-
 // Test Challenge 1
-console.log(`The Lazy Brown Fox ${fox}.`); // Expected: "Jumped Over The Lazy Dog Over The Fence"
+console.log(jumpOverFence(fox)); // Expected: "Jumped Over The Lazy Dog Over The Fence"
 
 // Challenge 2: Even or Odd
 // Goal: Create a function that returns true if a number is even, false if odd.
 // Error: Incorrect true/false return value based on even/odd check.
 function isEvenOrOdd(num) {
+  return num % 2 === 0;
+
   // Your code here (Hint: Use the modulus operator % to check for remainder when divided by 2)
   // Example: return num % 2 === 0;
 }
@@ -29,7 +31,7 @@ console.log(isEvenOrOdd(5)); // Expected: false
 // Error: Incorrect Fahrenheit conversion result.
 function celsiusToFahrenheit(celsiusNumber) {
   // Your code here (Hint: Apply the formula (C * 9/5) + 32)
-  // Example: return (celsiusNumber * 9/5) + 32;
+  Example: return (celsiusNumber * 9) / 5 + 32;
 }
 
 // Test Challenge 3
@@ -41,7 +43,7 @@ console.log(celsiusToFahrenheit(0)); // Expected: 32
 // Error: Incorrect maximum number returned.
 function findMaxNumber(arr) {
   // Your code here (Hint: Use Math.max(...arr))
-  // Example: return Math.max(...arr);
+  Example: return Math.max(...arr);
 }
 
 // Test Challenge 4
@@ -52,7 +54,7 @@ console.log(findMaxNumber([1, 2, 3, 4, 5])); // Expected: 5
 // Error: "Hello World" not logged or logged immediately, not after 2 seconds.
 function sayHelloWorld() {
   // Your code here (Hint: Use setTimeout to delay the console.log)
-  // Example: setTimeout(() => console.log("Hello World"), 2000);
+  Example: setTimeout(() => console.log("Hello World"), 2000);
 }
 
 // Test Challenge 5

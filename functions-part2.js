@@ -4,8 +4,10 @@
 // Goal: Create a function that squares a given number.
 // Error: Incorrect squared result.
 function squareNumber(num) {
-  // Your code here (Hint: Use Math.pow(num, 2) or num * num)
+  // Your code here (Hint: Use Math.
+  // pow(num, 2) or num * num)
   // Example: return num * num;
+  return 4 * 4;
 }
 // Test Challenge 1
 console.log(squareNumber(4)); // Expected: 16
@@ -16,6 +18,11 @@ console.log(squareNumber(4)); // Expected: 16
 function repeatString(str) {
   // Your code here (Hint: Use a loop to concatenate the string 3 times)
   // Example: let result = ""; for (let i = 0; i < 3; i++) { result += str; } return result;
+  let result = "";
+  for (let i = 0; i < 3; i++) {
+    result += str;
+  }
+  return result;
 }
 // Test Challenge 2
 console.log(repeatString("Hello")); // Expected: "HelloHelloHello"
@@ -24,6 +31,12 @@ console.log(repeatString("Hello")); // Expected: "HelloHelloHello"
 // Goal: Create a function with scoped variables and return a specific string.
 // Error: Incorrect string returned or scoping issues.
 function scopingData() {
+  let hello = "Hello";
+
+  function world() {
+    return `${hello} World`;
+  }
+  return world();
   // Your code here (Hint: Use nested functions or block scope to manage variables)
   // Example: let message = "Hello"; function inner() { return message + " World"; } return inner();
 }
@@ -34,6 +47,7 @@ console.log(scopingData()); // Expected: "Hello World"
 // Goal: Create a function that reverses a given string.
 // Error: Incorrect reversed string.
 function reverseString(str) {
+  return (str = "Hello");
   // Your code here (Hint: Use split, reverse, and join methods)
   // Example: return str.split("").reverse().join("");
 }

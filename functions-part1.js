@@ -10,7 +10,7 @@ function jumpOverFence(fox) {
 }
 
 // Test Challenge 1
-console.log(`The lazy brown fox ${fox}.`); // Expected: "Jumped Over The Lazy Dog Over The Fence"
+console.log(`The Lazy Brown Fox ${fox}.`); // Expected: "Jumped Over The Lazy Dog Over The Fence"
 
 // Challenge 2: Even or Odd
 // Goal: Create a function that returns true if a number is even, false if odd.
